@@ -20,20 +20,20 @@ const countdown = setInterval(() => {
   );
   result.innerHTML = `
     <div class='center'>
-        <p>${days}</p>
-        <p>DAYS</p>
+        <p class="number">${days}</p>
+        <p class="text">DAYS</p>
       </div>
       <div class='center'>
-        <p>${hours}</p>
-        <p>HOURS</p>
+        <p class="number">${hours}</p>
+        <p class="text">HOURS</p>
       </div>
       <div class='center'>
-        <p>${minutes}</p>
-        <p>MINUTES</p>
+        <p class="number">${minutes}</p>
+        <p class="text">MINUTES</p>
       </div>
       <div class='center'>
-        <p>${seconds}</p>
-        <p>SECONDES</p>
+        <p class="number">${seconds}</p>
+        <p class="text">SECONDES</p>
       </div>
   `;
 }, 1000);

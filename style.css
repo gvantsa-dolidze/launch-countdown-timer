@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,12 @@
 body {
   display: flex;
   justify-content: center;
+  background: linear-gradient(
+    180deg,
+    #1d1e28 0.12%,
+    #261c2d 94.84%,
+    #261a2d 100%
+  );
 }
 main {
   width: 375px;
@@ -17,11 +25,32 @@ main {
 }
 .title {
   text-align: center;
+  color: #fff;
+  font-family: "Red Hat Text";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 6.136px;
+  text-transform: uppercase;
 }
 .show-result {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+.number {
+  color: #fb5e84;
+  font-family: "Red Hat Text";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -1.08px;
+}
+.text {
+  color: #8385a9;
+  font-family: "Red Hat Text";
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 2.959px;
 }
 .icons {
   display: flex;
