@@ -36,6 +36,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 200px;
 }
 .number {
   color: #fb5e84;
@@ -45,6 +46,7 @@ main {
   line-height: 71px;
   letter-spacing: -1.08px;
 }
+
 .text {
   color: #8385a9;
   font-family: "Red Hat Text";
@@ -58,4 +60,43 @@ main {
 }
 .center {
   text-align: center;
+}
+.relative {
+  position: relative;
+}
+.absolute p {
+  position: absolute;
+  top: 0;
+  left: 14px;
+}
+.left-svg {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 1;
+}
+.right-svg {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 1;
+}
+hr {
+  position: absolute;
+  top: 33px;
+  width: 70px;
+  border: none;
+  height: 0.473px;
+  opacity: 0.253;
+  background-color: #000;
+  z-index: 1;
+}
+.dark {
+  position: absolute;
+  top: 0;
+  width: 70px;
+  height: 33px;
+  border-radius: 4px 4px 0px 0px;
+  opacity: 0.1506;
+  background: #000;
 }

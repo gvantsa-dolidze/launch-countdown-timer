@@ -20,19 +20,82 @@ const countdown = setInterval(() => {
   );
   result.innerHTML = `
     <div class='center'>
-        <p class="number">${days}</p>
-        <p class="text">DAYS</p>
+       <div class="relative"> 
+         <svg xmlns="http://www.w3.org/2000/svg" width="70" height="71" viewBox="0 0 70 71" fill="none">
+            <rect width="70" height="71" rx="8" fill="#191A23"/>
+            <rect width="70" height="66.2667" rx="4" fill="#343650"/>
+         </svg>
+          <div class="absolute">
+          <div class="dark"></div>
+            <svg class="left-svg" xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6" fill="none">
+               <circle cy="3" r="3" fill="#191A23"/>
+            </svg>
+                <svg  class="right-svg" xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6" fill="none">
+  <circle cx="3" cy="3" r="3" transform="matrix(-1 0 0 1 6 0)" fill="#191A23"/>
+</svg>
+<hr>
+            <p class="number">${days}</p>
+        
+          </div>
       </div>
+       <p class="text">DAYS</p>
+    </div>
       <div class='center'>
-        <p class="number">${hours}</p>
+        <div class="relative"> 
+         <svg xmlns="http://www.w3.org/2000/svg" width="70" height="71" viewBox="0 0 70 71" fill="none">
+            <rect width="70" height="71" rx="8" fill="#191A23"/>
+            <rect width="70" height="66.2667" rx="4" fill="#343650"/>
+         </svg>
+       <div class="absolute">
+       <div class="dark"></div>
+          <svg class="left-svg" xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6" fill="none">
+               <circle cy="3" r="3" fill="#191A23"/>
+            </svg>
+                <svg  class="right-svg" xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6" fill="none">
+  <circle cx="3" cy="3" r="3" transform="matrix(-1 0 0 1 6 0)" fill="#191A23"/>
+</svg>
+<hr>
+       <p class="number">${hours}</p>
+       </div>
+      </div>
         <p class="text">HOURS</p>
       </div>
       <div class='center'>
-        <p class="number">${minutes}</p>
+        <div class="relative"> 
+         <svg xmlns="http://www.w3.org/2000/svg" width="70" height="71" viewBox="0 0 70 71" fill="none">
+            <rect width="70" height="71" rx="8" fill="#191A23"/>
+            <rect width="70" height="66.2667" rx="4" fill="#343650"/>
+         </svg>
+       <div class="absolute">
+       <div class="dark"></div>
+          <svg class="left-svg" xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6" fill="none">
+               <circle cy="3" r="3" fill="#191A23"/>
+            </svg>
+                <svg  class="right-svg" xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6" fill="none">
+  <circle cx="3" cy="3" r="3" transform="matrix(-1 0 0 1 6 0)" fill="#191A23"/>
+</svg>
+<hr>
+       <p class="number">${minutes}</p></div>
+      </div>
         <p class="text">MINUTES</p>
       </div>
       <div class='center'>
-        <p class="number">${seconds}</p>
+       <div class="relative"> 
+         <svg xmlns="http://www.w3.org/2000/svg" width="70" height="71" viewBox="0 0 70 71" fill="none">
+            <rect width="70" height="71" rx="8" fill="#191A23"/>
+            <rect width="70" height="66.2667" rx="4" fill="#343650"/>
+         </svg>
+       <div class="absolute">
+       <div class="dark"></div>
+          <svg class="left-svg" xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6" fill="none">
+               <circle cy="3" r="3" fill="#191A23"/>
+            </svg>
+                <svg  class="right-svg" xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6" fill="none">
+  <circle cx="3" cy="3" r="3" transform="matrix(-1 0 0 1 6 0)" fill="#191A23"/>
+</svg>
+<hr>
+       <p class="number">${seconds}</p></div>
+      </div>
         <p class="text">SECONDES</p>
       </div>
   `;
