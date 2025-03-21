@@ -6,9 +6,11 @@
   box-sizing: border-box;
 }
 body {
+  width: 375px;
+  height: 667px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   background: linear-gradient(
     180deg,
     #1d1e28 0.12%,
@@ -17,13 +19,11 @@ body {
   );
 }
 main {
-  width: 375px;
-  height: 667px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 54px;
-  padding: 142px 24px;
+  padding: 142px 24px 0;
 }
 .title {
   text-align: center;
@@ -58,6 +58,7 @@ main {
 .icons {
   display: flex;
   justify-content: center;
+  margin-bottom: 48px;
 }
 .center {
   text-align: center;
