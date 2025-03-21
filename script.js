@@ -5,12 +5,19 @@ const countdown = setInterval(() => {
 
   const daysLeft = countdownDay - today;
 
-  const days = Math.floor(daysLeft / (1000 * 60 * 60 * 24));
-  const hours = Math.floor(
-    (daysLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  const days = String(Math.floor(daysLeft / (1000 * 60 * 60 * 24))).padStart(
+    2,
+    "0"
   );
-  const minutes = Math.floor((daysLeft % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((daysLeft % (1000 * 60)) / 1000);
-  //   console.log(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+  const hours = String(
+    Math.floor((daysLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+  ).padStart(2, "0");
+  const minutes = String(
+    Math.floor((daysLeft % (1000 * 60 * 60)) / (1000 * 60))
+  ).padStart(2, "0");
+  const seconds = String(Math.floor((daysLeft % (1000 * 60)) / 1000)).padStart(
+    2,
+    "0"
+  );
   result.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }, 1000);
