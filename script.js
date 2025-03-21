@@ -19,5 +19,22 @@ const countdown = setInterval(() => {
     2,
     "0"
   );
-  result.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  result.innerHTML = `
+    <div class='center'>
+        <p>${days}</p>
+        <p>days</p>
+      </div>
+      <div class='center'>
+        <p>${hours}</p>
+        <p>hours</p>
+      </div>
+      <div class='center'>
+        <p>${minutes}</p>
+        <p>minutes</p>
+      </div>
+      <div class='center'>
+        <p>${seconds}</p>
+        <p>secondes</p>
+      </div>
+  `;
 }, 1000);
