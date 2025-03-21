@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  position: relative;
   background: linear-gradient(
     180deg,
     #1d1e28 0.12%,
@@ -98,7 +99,60 @@ hr {
   opacity: 0.1506;
   background: #000;
 }
-
+/* STAR */
+.star,
+.star1,
+.star2,
+.star3,
+.star4,
+.star5,
+.star5,
+.star6,
+.star7,
+.star8,
+.star9 {
+  width: 3px;
+  height: 3px;
+  background-color: #ffffff1b;
+  border-radius: 50%;
+  position: absolute;
+}
+.star {
+  top: 106px;
+  left: 3px;
+}
+.star1 {
+  top: 10px;
+  left: 38px;
+}
+.star2 {
+  left: 369px;
+  top: 98px;
+}
+.star3 {
+  left: 370px;
+  top: 134px;
+}
+.star4 {
+  left: 73px;
+  top: 220px;
+}
+.star5 {
+  left: 167px;
+  top: 350px;
+}
+.star6 {
+  left: 237px;
+  top: 452px;
+}
+.star7 {
+  left: 3px;
+  top: 424px;
+}
+.star8 {
+  left: 4px;
+  top: 460px;
+}
 /* FOOTER */
 footer {
   position: relative;
