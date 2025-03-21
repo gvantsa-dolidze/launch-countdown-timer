@@ -7,6 +7,7 @@
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background: linear-gradient(
     180deg,
@@ -20,8 +21,9 @@ main {
   height: 667px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 142px 24px 48px;
+  justify-content: flex-start;
+  gap: 54px;
+  padding: 142px 24px;
 }
 .title {
   text-align: center;
@@ -36,7 +38,6 @@ main {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 200px;
 }
 .number {
   color: #fb5e84;
